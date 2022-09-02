@@ -1,5 +1,13 @@
+{{!-- create a search form that has an input field receiving
+an artist's name and a button that submits the request. --}}
 
-<form action="/artist-search", method="GET">
+{{!-- this form should direct its query to /artist-search
+(action="/artist-search, method="GET") --}}
+
+{{!-- the name field input will be each of the keys on the
+req.query object, and what's on the input will be the value. --}}
+<h1>Express-Spotify</h1>
+<form action="/artist-search-results", method="GET">
     <input type="text" name="artistName" placeholder="Search for an artist">
     <button type="submit"> Search for an artist </button>
 </form>

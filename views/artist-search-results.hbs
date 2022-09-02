@@ -1,0 +1,10 @@
+{{!-- To display the found artist's info create artist-search-
+results.hbs inside views folder and display name, image, and
+button (or link) to show the albums --}}
+{{#each allArtists}}
+    {{this.name}} <br>
+    <br>
+    <img src="{{this.images.0.url}}" alt="artist image" width="200px"> <br>
+    <br>
+    <a href="/albums/{{this.id}}">View albums</a>
+{{/each}}
