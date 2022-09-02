@@ -6,6 +6,9 @@ each album and add a button/link to see the tracks --}}
     {{ this.name}} <br>
     <br>
     <img src="{{this.images.0.url}}" alt="artist image" width="200px"> <br>
-    <br
-    <a href="/tracks/{{this.id}}">See tracks</a>
+    <br>
+    <a href="/tracks/{{this.id}}">View tracks</a>
+    {{!-- Create the View tracks link on the albums page. This 
+    link should take you to a page with a list of all of the 
+    tracks on a particular album. --}}
 {{/each}}

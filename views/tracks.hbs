@@ -1,0 +1,10 @@
+{{#each tracks}}
+    <br>
+    {{this.name}}
+    <br>
+    {{#if this.preview_url  }}
+    <audio controls="true" src="{{this.preview_url}}"></audio>
+        {{else}}
+        <p>Preview not available</p>
+    {{/if}}
+{{/each}}
