@@ -6,5 +6,8 @@ button (or link) to show the albums --}}
     <br>
     <img src="{{this.images.0.url}}" alt="artist image" width="200px"> <br>
     <br>
+    {{!-- <a href="/albums/someArtistIdGoesHere">View Albums</a> --}}
     <a href="/albums/{{this.id}}">View albums</a>
+    {{!-- the URL should include artist's id and should change
+    dynamically --}}
 {{/each}}

@@ -1,0 +1,11 @@
+{{!-- So let's create a new page - albums.hbs where all the results 
+will be displayed. Make sure you show the name and the cover of 
+each album and add a button/link to see the tracks --}}
+
+{{#each allAlbums}}
+    {{ this.name}} <br>
+    <br>
+    <img src="{{this.images.0.url}}" alt="artist image" width="200px"> <br>
+    <br
+    <a href="/tracks/{{this.id}}">See tracks</a>
+{{/each}}
